@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+header {
+    background-color: darkblue;
+    height: 15vh;
+}
+
+.logo_placeholder {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.video_placeholder {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+p {
+    background-color: grey;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section {
+    background-color: maroon;
+    color: white;
+    width: 100%;
+}
+
+.hero_section {
+    background-image: url("../img/pexels-cottonbro-3171158.jpg");
+}
+
+.video_section {
+    background-image: url("../img/pexels-cottonbro-4254039.jpg");
+}
+
+.img_slider {
+    background-image: url("../img/pexels-cottonbro-3171158.jpg");
+}
+
+.promo_video {
+    width: 100%;
+}
+
+.parallax {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    height: 20vh;
+    background-color: darkblue;
+}
