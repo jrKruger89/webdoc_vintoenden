@@ -1,20 +1,49 @@
+// Image slider section
+
+// Variabel til img objekt
 const image = document.getElementById("slider_image");
+
+// Array med src atributter til slider, string format
 let imgArray = [
     "img/vintønden.1.jpg",
     "img/vintønden.3.jpg",
     "img/vintønden.2.jpg",
     "img/vintønden.4.jpg",
 ];
-let imgDuration = 4000;
+
+// Variabel for startindex i slider
 let curIndex = 0;
 
-function slideShow() {
+slideShow = () => {
+    // Img objektet starter i array position 0
     image.src = imgArray[curIndex];
+    // Tæller 1 op, maks er 3
     curIndex++;
-
+    // Hvis tælleren rammer arraylængden (4), sættes den tilbage til 0, starter forfra
     if (curIndex == imgArray.length) {
         curIndex = 0;
     }
-    setTimeout("slideShow()", imgDuration);
-}
+    // Funktion kaldes hvert 4. sekund
+    setTimeout("slideShow()", 4000);
+};
 slideShow();
+
+/*--------------------------------------------------*/
+
+// Video section
+// Variabel til vyideo objekt
+const promo = document.querySelector(".promo_video");
+/* 
+Funktion tjekker når der scrolles på siden,
+om videons øverste grænse er mindre end
+250 pixels fra vinduets top. Hvis ja så
+spiller videon. Når der scrolles længere ned
+stopper videon når vinduets top er mindre end
+250 pixels fra videons nederste grænse.
+*/
+window.onscroll = () => {
+    promo.getBoundingClientRect().bottom < 250 ||
+    promo.getBoundingClientRect().top > 250
+        ? promo.pause()
+        : promo.play();
+};
