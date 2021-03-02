@@ -12,8 +12,9 @@ html {
 }
 
 header {
-    background-color: darkblue;
-    height: 10vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 
 .logo_placeholder {
@@ -26,50 +27,64 @@ p {
     color: whitesmoke;
     background-color: rgb(49, 49, 49);
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 1em;
+    padding: 1.8em;
+    line-height: 1.5em;
+}
+
+section {
+    background-color: rgb(49, 49, 49);
 }
 
 .pimg1 {
-    background-image: url("../img/pexels-cottonbro-3171158.jpg");
-    min-height: 500px;
+    background-image: url("../img/vintønden.5\ -\ Kopi.jpg");
+    min-height: 600px;
+    opacity: 0.6;
 }
 
 .pimg2 {
-    background-image: url("../img/pexels-cottonbro-4254039.jpg");
+    background-image: url("../img/vintønden.4.jpg");
     min-height: 500px;
+    opacity: 0.6;
 }
 
 .pimg3 {
-    background-image: url("../img/pexels-bruno-cantuária-774455.jpg");
+    background-image: url("../img/vintønden.2.jpg");
     min-height: 500px;
+    opacity: 0.6;
 }
 
-.pimg1::before,
-.pimg2::before,
-.pimg3::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(145, 145, 145, 0.7);
+.pimg4 {
+    background-image: url("../img/vintønden.3.jpg");
+    min-height: 500px;
+    opacity: 0.6;
+}
+
+.video_section {
+    display: flex;
+    align-items: center;
+}
+
+.video_section p {
+    text-align: left;
+    line-height: 1.5em;
 }
 
 .promo_video {
-    width: 100%;
+    width: 60%;
+    margin: 20px;
 }
 
 .img_slider {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
 }
 
 #slider_image {
-    width: 500px;
+    width: 600px;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,5 +101,5 @@ p {
 
 footer {
     height: 20vh;
-    background-color: darkblue;
+    background-color: whitesmoke;
 }
