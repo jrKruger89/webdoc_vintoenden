@@ -5,10 +5,10 @@ const image = document.getElementById("slider_image");
 
 // Array med src atributter til slider, string format
 let imgArray = [
-    "img/vintønden.1.jpg",
-    "img/vintønden.3.jpg",
-    "img/vintønden.2.jpg",
-    "img/vintønden.4.jpg",
+    "img/vintønden.1.webp",
+    "img/vintønden.3.webp",
+    "img/vintønden.2.webp",
+    "img/vintønden.4.webp",
 ];
 
 // Variabel for startindex i slider
