@@ -6,12 +6,15 @@
 
 body,
 html {
+    font-size: 100%;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: darkblue;
-    height: 15vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 
 .logo_placeholder {
@@ -19,42 +22,77 @@ header {
     font-size: 2.5rem;
     text-align: center;
 }
-.video_placeholder {
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
-}
+
 p {
-    background-color: grey;
+    color: whitesmoke;
+    background-color: rgb(49, 49, 49);
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
+    padding: 1.8em;
+    line-height: 1.5em;
 }
 
 section {
-    background-color: maroon;
-    color: white;
-    width: 100%;
+    background-color: rgb(49, 49, 49);
 }
 
-.hero_section {
-    background-image: url("../img/pexels-cottonbro-3171158.jpg");
+.pimg1 {
+    background-image: url("../img/vintønden.5\ -\ Kopi.jpg");
+    min-height: 600px;
+    opacity: 0.6;
+}
+
+.pimg2 {
+    background-image: url("../img/vintønden.4.jpg");
+    min-height: 500px;
+    opacity: 0.6;
+}
+
+.pimg3 {
+    background-image: url("../img/vintønden.2.jpg");
+    min-height: 500px;
+    opacity: 0.6;
+}
+
+.pimg4 {
+    background-image: url("../img/vintønden.3.jpg");
+    min-height: 500px;
+    opacity: 0.6;
 }
 
 .video_section {
-    background-image: url("../img/pexels-cottonbro-4254039.jpg");
+    display: flex;
+    align-items: center;
 }
 
-.img_slider {
-    background-image: url("../img/pexels-cottonbro-3171158.jpg");
+.video_section p {
+    text-align: left;
+    line-height: 1.5em;
 }
 
 .promo_video {
-    width: 100%;
+    width: 60%;
+    margin: 20px;
+}
+
+.img_slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#slider_image {
+    width: 600px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax {
-    height: 500px;
+    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,5 +101,5 @@ section {
 
 footer {
     height: 20vh;
-    background-color: darkblue;
+    background-color: whitesmoke;
 }
