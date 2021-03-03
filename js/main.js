@@ -31,7 +31,7 @@ slideShow();
 /*--------------------------------------------------*/
 
 // Video section
-// Variabel til vyideo objekt
+// Variabel til video objekt
 const promo = document.querySelector(".promo_video");
 /* 
 Funktion tjekker når der scrolles på siden,
