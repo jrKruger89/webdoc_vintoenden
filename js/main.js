@@ -41,9 +41,12 @@ spiller videon. Når der scrolles længere ned
 stopper videon når vinduets top er mindre end
 250 pixels fra videons nederste grænse.
 */
-window.onscroll = () => {
-    promo.getBoundingClientRect().bottom < 250 ||
-    promo.getBoundingClientRect().top > 250
-        ? promo.pause()
-        : promo.play();
-};
+
+if (screen.width > 992) {
+    window.onscroll = () => {
+        promo.getBoundingClientRect().bottom < 250 ||
+        promo.getBoundingClientRect().top > 250
+            ? promo.pause()
+            : promo.play();
+    };
+}
