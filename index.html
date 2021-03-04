@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://use.fontawesome.com/69755aa479.js"></script>
+        <link rel="icon" href="img/logo_small.png" type="image/icon" />
         <link rel="stylesheet" href="style/style.css" />
         <title>Vintønden</title>
     </head>
     <body>
         <header>
-            <img class="logo" src="img/logo_small.png" />
+            <img class="logo" src="img/logo_small.png" alt="vintoenden_logo" />
         </header>
         <div class="pimg1 parallax"></div>
         <section class="hero_section">
+            <h2 class="section_title">Hero</h2>
             <p>
                 Hos Vintønden ønsker vi at sætte kunderne i centrum. Vi sørger
                 for, at kunderne får bestilt de rigtige vine til deres behov og
@@ -20,12 +23,19 @@
                 deres spørgsmål, så vi kan gøre deres oplevelse på Vintønden
                 mere personlig. Vores mål med Vintønden er, at kunderne får
                 samme vejledning på hjemmesiden, som hvis de var gået ned i en
-                fysisk butik.
+                fysisk butik. <br />
             </p>
+            <p class="slogan"><i>"Smag kvalitet, smag Vintønden"</i></p>
         </section>
         <div class="pimg2 parallax"></div>
         <section class="video_section">
-            <video class="promo_video" src="video/2_cut.mp4" controls></video>
+            <h2 class="section_title">Video</h2>
+            <video
+                class="promo_video"
+                src="video/Vintønden.dk.mp4"
+                poster="img/logo.png"
+                controls
+            ></video>
             <p>
                 Til dagligt er jeg, Mathias studerende og læser til
                 markedsføringsøkonom, ved siden af driver Vintønden med Anders.
@@ -38,7 +48,12 @@
         </section>
         <div class="pimg3 parallax"></div>
         <section class="img_slider">
-            <img id="slider_image" />
+            <h2 class="section_title">Slider</h2>
+            <img
+                id="slider_image"
+                src="img/vintønden.1.webp"
+                alt="slider_placeholder"
+            />
             <p>
                 Vi er hos Vintønden højt specialiseret i onlinesalg af vin.
                 Bestil hos os. Din bestilling vil blive pakket lækkert og
@@ -50,8 +65,32 @@
         </section>
         <div class="pimg4 parallax"></div>
         <footer>
-            <section class="contact"></section>
-            <section class="social"></section>
+            <section class="contact">
+                <h2 class="contact_title">Kontakt os</h2>
+                <p>
+                    Du er meget velkommen til at kontakte os.<br />
+                    Du kan sende os en mail på
+                    <a href="mailto:info@vintoenden.dk">info@vintoenden.dk</a
+                    >.<br />
+                    Vi bestræber os på, at besvarer mails hurtigst muligt.<br />
+                    Alternativt kan vi kontaktes på telefon 27829912.
+                </p>
+            </section>
+            <section class="social">
+                <h2 class="social_title">Find os her</h2>
+
+                <a href="https://www.facebook.com/Vintondendk/" target="_blank"
+                    ><i class="fa fa-facebook-square" aria-hidden="true"></i
+                ></a>
+                <a
+                    href="https://www.instagram.com/vintoenden.dk/"
+                    target="_blank"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href="https://vintoenden.dk/" target="_blank"
+                    ><img src="img/web_icon.png" alt="web_icon"
+                /></a>
+            </section>
         </footer>
         <script src="js/main.js" defer></script>
     </body>

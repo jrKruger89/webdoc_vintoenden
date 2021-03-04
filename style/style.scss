@@ -31,8 +31,18 @@ p {
     margin: auto;
 }
 
+.slogan {
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-top: 0.3em;
+}
+
 section {
     background-color: whitesmoke;
+}
+
+.section_title {
+    visibility: hidden;
 }
 
 .pimg1 {
@@ -75,7 +85,7 @@ section {
 }
 
 .promo_video {
-    width: 70%;
+    width: 75%;
     margin-top: 3em;
 }
 
@@ -87,7 +97,7 @@ section {
 }
 
 #slider_image {
-    width: 800px;
+    width: 75%;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,6 +112,108 @@ section {
 }
 
 footer {
-    height: 20vh;
+    width: 75%;
     background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1.8em 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.social img {
+    width: 41.16px;
+    padding-top: 1px;
+}
+
+.fa {
+    font-size: 3em;
+    padding-right: 0.7em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1025px) {
+    p {
+        font-size: 1.2rem;
+    }
+
+    .slogan {
+        font-size: 2em;
+        padding: 0.3em 0 1.5em;
+    }
+
+    .contact p {
+        font-size: 1em;
+    }
+
+    .fa {
+        padding-right: 0.3em;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    .slogan {
+        font-size: 1.25em;
+        padding: 0.3em 0 1.5em;
+    }
+
+    .fa {
+        padding-right: 0.1em;
+        font-size: 2em;
+    }
+
+    .social img {
+        width: 30.63px;
+        padding-top: 1px;
+    }
+
+    .social {
+        width: 60%;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    .contact p {
+        font-size: 0.9em;
+        width: 80%;
+    }
+
+    .contact_title,
+    .social_title {
+        font-size: 1.2em;
+    }
+
+    .pimg,
+    .pimg2,
+    .pimg3,
+    .pimg4 {
+        height: 400px;
+    }
 }

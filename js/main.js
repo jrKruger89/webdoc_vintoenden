@@ -31,7 +31,7 @@ slideShow();
 /*--------------------------------------------------*/
 
 // Video section
-// Variabel til vyideo objekt
+// Variabel til video objekt
 const promo = document.querySelector(".promo_video");
 /* 
 Funktion tjekker når der scrolles på siden,
@@ -40,10 +40,16 @@ om videons øverste grænse er mindre end
 spiller videon. Når der scrolles længere ned
 stopper videon når vinduets top er mindre end
 250 pixels fra videons nederste grænse.
+Der er sat en condition ind så videon ikke
+auto-player på mobil og tablet, da det er pisse
+irriterende.
 */
-window.onscroll = () => {
-    promo.getBoundingClientRect().bottom < 250 ||
-    promo.getBoundingClientRect().top > 250
-        ? promo.pause()
-        : promo.play();
-};
+
+if (screen.width > 1024) {
+    window.onscroll = () => {
+        promo.getBoundingClientRect().bottom < 250 ||
+        promo.getBoundingClientRect().top > 250
+            ? promo.pause()
+            : promo.play();
+    };
+}
