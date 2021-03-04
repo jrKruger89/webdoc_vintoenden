@@ -40,9 +40,12 @@ om videons øverste grænse er mindre end
 spiller videon. Når der scrolles længere ned
 stopper videon når vinduets top er mindre end
 250 pixels fra videons nederste grænse.
+Der er sat en condition ind så videon ikke
+auto-player på mobil og tablet, da det er pisse
+irriterende.
 */
 
-if (screen.width > 992) {
+if (screen.width > 1024) {
     window.onscroll = () => {
         promo.getBoundingClientRect().bottom < 250 ||
         promo.getBoundingClientRect().top > 250

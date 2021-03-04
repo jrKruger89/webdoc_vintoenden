@@ -148,7 +148,7 @@ a {
     color: black;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1025px) {
     p {
         font-size: 1.2rem;
     }
@@ -208,5 +208,12 @@ a {
     .contact_title,
     .social_title {
         font-size: 1.2em;
+    }
+
+    .pimg,
+    .pimg2,
+    .pimg3,
+    .pimg4 {
+        height: 400px;
     }
 }
