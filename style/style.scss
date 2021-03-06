@@ -1,27 +1,36 @@
+// Sass variabler
+$background-color: whitesmoke;
+$font-color: rgb(49, 49, 49);
+
+// Lille css reset
 * {
+    // Fjerner browser padding og margin
     margin: 0;
     padding: 0;
+    // Hvordan højde og bredde udregnes
     box-sizing: border-box;
 }
 
 body,
 html {
     font-size: 100%;
+    // Højde 100% er med til at skabe parallax effekten
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
+    background-color: $background-color;
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: whitesmoke;
+    // Centrér logoet
+    background-color: $background-color;
     display: flex;
     justify-content: center;
 }
 
 p {
-    color: rgb(49, 49, 49);
-    background-color: whitesmoke;
+    color: $font-color;
+    background-color: $background-color;
     width: 75%;
     font-size: 1.5rem;
     text-align: center;
@@ -38,13 +47,14 @@ p {
 }
 
 section {
-    background-color: whitesmoke;
+    background-color: $background-color;
 }
 
 .section_title {
     visibility: hidden;
 }
 
+// Div elementer med parallax billeder
 .pimg1 {
     background-image: url("../img/vintønden.4.webp");
     background-position: center;
@@ -106,6 +116,7 @@ section {
 
 .parallax {
     position: relative;
+    // background-attachment: fixed skaber parallax effekten
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +124,7 @@ section {
 
 footer {
     width: 75%;
-    background-color: whitesmoke;
+    background-color: $background-color;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -148,6 +159,7 @@ a {
     color: black;
 }
 
+// Formattering til skærme med en bredde på maks. 1024 pixels
 @media screen and (max-width: 1025px) {
     p {
         font-size: 1.2rem;
@@ -167,10 +179,12 @@ a {
     }
 
     .parallax {
+        // Parallax effekt fjernet på mindre skærme, forbedre performance
         background-attachment: scroll;
     }
 }
 
+// Formattering til små devices
 @media screen and (max-width: 600px) {
     p {
         font-size: 0.9rem;
