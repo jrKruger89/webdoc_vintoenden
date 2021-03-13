@@ -1,8 +1,23 @@
 # One year for image files
-<filesMatch ".(jpg|jpeg|png|gif|ico|webp|mp4)$">
+<FilesMatch ".(jpg|jpeg|png|gif|ico|webp|mp4)$">
 Header set Cache-Control "max-age=31536000, public"
-</filesMatch>
+</FilesMatch>
 # One month for css and js
-<filesMatch ".(css|js)$">
+<FilesMatch ".(css|js)$">
 Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
+</FilesMatch>
+
+# Password restrict specified file
+<Files some_support.html>
+AuthType Basic
+AuthName "Restricted"
+AuthUserFile /var/www/jesperkruger.dk/public_html/restricted/.htpasswd
+require valid-user
+</Files>
+
+# Don't show .ht-files to outsiders
+<FilesMatch "^\.ht">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
