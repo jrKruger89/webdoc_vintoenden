@@ -28,6 +28,15 @@ header {
     justify-content: center;
 }
 
+.some_link {
+    position: absolute;
+    top: 55px;
+    right: 40px;
+    background-color: $font-color;
+    color: $background-color;
+    padding: 10px;
+}
+
 p {
     color: $font-color;
     background-color: $background-color;

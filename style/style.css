@@ -25,6 +25,15 @@ header {
           justify-content: center;
 }
 
+.some_link {
+  position: absolute;
+  top: 55px;
+  right: 40px;
+  background-color: #313131;
+  color: whitesmoke;
+  padding: 10px;
+}
+
 p {
   color: #313131;
   background-color: whitesmoke;
