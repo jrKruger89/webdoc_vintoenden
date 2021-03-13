@@ -44,12 +44,38 @@ Der er sat en condition ind så videon ikke
 auto-player på mobil og tablet, da det er pisse
 irriterende.
 */
-
 if (screen.width > 1024) {
     window.onscroll = () => {
+        /*
         promo.getBoundingClientRect().bottom < 250 ||
         promo.getBoundingClientRect().top > 250
             ? promo.pause()
             : promo.play();
     };
+    */
+        if (isElemVisible(promo)) {
+            promo.play();
+        } else {
+            promo.pause();
+        }
+    };
 }
+
+window.addEventListener("scroll", () => {
+    const parallax = Array.from(document.querySelectorAll(".parallax"));
+    parallax.forEach((elem) => {
+        if (isElemVisible(elem)) {
+            elem.style.filter = "grayscale(0%)";
+        } else {
+            elem.style.filter = "grayscale(100%)";
+        }
+    });
+});
+
+// this function will check whether a tag is visible
+isElemVisible = (elem) => {
+    return (
+        elem.getBoundingClientRect().top >= 0 &&
+        elem.getBoundingClientRect().bottom < window.innerHeight
+    );
+};
