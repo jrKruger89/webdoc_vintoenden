@@ -28,13 +28,29 @@ header {
     justify-content: center;
 }
 
-.some_link {
+.links {
     position: absolute;
     top: 55px;
-    right: 40px;
     background-color: $font-color;
     color: $background-color;
     padding: 10px;
+    transition: box-shadow 2000ms;
+}
+
+.index_link {
+    left: 40px;
+}
+
+.some_link {
+    right: 40px;
+}
+
+.links:hover {
+    box-shadow: 4px 4px 2px #330000;
+}
+
+.page_title {
+    text-align: center;
 }
 
 p {
@@ -59,8 +75,8 @@ section {
     background-color: $background-color;
 }
 
-.section_title {
-    visibility: hidden;
+.section_title_index {
+    display: none;
 }
 
 .parallax {
@@ -93,6 +109,11 @@ section {
 
 .pimg4 {
     background-image: url("../img/vintønden.3.webp");
+    min-height: 600px;
+}
+
+.pimg5 {
+    background-image: url("../img/vintønden.6.webp");
     min-height: 600px;
 }
 
@@ -164,6 +185,47 @@ a {
     color: black;
 }
 
+/*---------------------------- SOME Page ------------------------------*/
+
+.section_title_some {
+    color: $font-color;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.insta-post {
+    max-width: 45%;
+    padding: 30px;
+    object-fit: cover;
+}
+
+.face-post {
+    max-width: 90%;
+    padding: 30px;
+}
+
+.linkedIn-post {
+    max-width: 90%;
+    padding: 30px;
+}
+
+.newsletter-post1 {
+    max-width: 90%;
+    padding: 30px;
+}
+
+.newsletter-post2 {
+    max-width: 50%;
+    padding: 30px;
+}
+
 // Formattering til skærme med en bredde på maks. 1024 pixels
 @media screen and (max-width: 1025px) {
     p {
@@ -191,6 +253,19 @@ a {
 
 // Formattering til små devices
 @media screen and (max-width: 600px) {
+    .links {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     p {
         font-size: 0.9rem;
         width: 90%;
