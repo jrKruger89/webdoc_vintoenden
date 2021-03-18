@@ -44,6 +44,17 @@ window.addEventListener("scroll", () => {
     });
 });
 
+// Scroll to content section
+
+const nav_items = document.querySelectorAll(".nav_item");
+
+nav_items.forEach((item) => {
+    item.addEventListener("click", () => {
+        let elem = document.getElementById(item.getAttribute("data-link"));
+        elem.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+});
+
 // Image slider section
 
 // Variabel til img objekt
